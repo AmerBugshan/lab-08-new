@@ -1,9 +1,9 @@
 const About = () => {
   return (
-    <>
-      <h1>About us</h1>
+    <div className="about-container">
+      <h1>About Us</h1>
       <p>This service is free tiny URL</p>
-    </>
+    </div>
   );
 };
 

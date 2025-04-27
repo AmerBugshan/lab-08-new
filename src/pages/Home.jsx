@@ -12,12 +12,19 @@ const Home = () => {
   }
   function handleShorten() {
     const baseURL = "https://cpit405.co/";
-    if (customURL && customURL.length > 5) {
+    if (customURL && customURL.length > 0) {
       setResultURL(baseURL + customURL);
     } else {
-      const id = getRandomLetter;
+      const id =
+        getRandomLetter() +
+        getRandomLetter() +
+        getRandomLetter() +
+        getRandomLetter() +
+        getRandomLetter(); // random 5 letters
+      setResultURL(baseURL + id);
     }
   }
+
   return (
     <div className="container">
       <h1>URL Shrinker</h1>

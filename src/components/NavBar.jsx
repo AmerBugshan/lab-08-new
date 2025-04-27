@@ -1,12 +1,14 @@
+import { Link } from "react-router";
+
 const NavBar = () => {
   return (
-    <nav>
+    <nav className="navbar">
       <ul>
         <li>
-          <a href="#">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="/About">About</a>
+          <Link to="/about">About</Link>
         </li>
       </ul>
     </nav>
